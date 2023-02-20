@@ -1,13 +1,17 @@
-/* 16 x 16 grid style */
+ :root {
+    --height-and-width: 16;
+ }
+
+
 .container {
     display: inline-grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(var(--height-and-width, 16), 1fr);
+    grid-template-rows: repeat(var(--height-and-width, 16), 1fr);
 }
 
 .grid-item {
-    height: 16vh;
-    width: 16vw;
+    height: 20vh;
+    width: 20vw;
 }
 
 .grid-hover-change {
