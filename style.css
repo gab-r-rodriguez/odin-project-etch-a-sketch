@@ -1,0 +1,15 @@
+/* 16 x 16 grid style */
+.container {
+    display: inline-grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.grid-item {
+    height: 16vh;
+    width: 16vw;
+}
+
+.grid-hover-change {
+    background-color: black;
+}
